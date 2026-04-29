@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 600px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.hero {
+  background: linear-gradient(180deg, #000, #111);
+}
+
+.section-light {
+  background: #111;
+}
+
+.section-gray {
+  background: #1c1c1e;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.big-text {
+  font-size: 4rem;
+  font-weight: bold;
+}

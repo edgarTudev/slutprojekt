@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="deco.css">
+<title>Music Theory for Producers</title>
+<style>
+
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <h1 class="fade-in">Music Theory.</h1>
+  <p class="fade-in">Built for modern producers. Understand sound like never before.</p>
+</section>
+
+<section class="section-light">
+  <h1 class="fade-in">Scales</h1>
+  <p class="fade-in">Major, minor, and everything in between. Scales define your emotional palette.</p>
+</section>
+
+<section class="section-gray">
+  <h1 class="fade-in">Chords</h1>
+  <p class="fade-in">Learn how to build chords and progressions that hit hard in any genre.</p>
+</section>
+
+<section class="section-light">
+  <h1 class="fade-in">Rhythm</h1>
+  <p class="fade-in">Groove, timing, and swing — the backbone of every great track.</p>
+</section>
+
+<section class="section-gray">
+  <h1 class="big-text fade-in">Create. Feel. Produce.</h1>
+</section>
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
